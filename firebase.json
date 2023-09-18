@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "Movie_Web_Angular",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "movie-web-angular-7cd84": {
+      "hosting": {
+        "Movie_Web_Angular": [
+          "movie-web-angular-7cd84"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "movie-web-angular-7cd84"
+  }
+}

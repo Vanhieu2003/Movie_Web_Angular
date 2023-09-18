@@ -47,7 +47,7 @@ export class MovieApiServiceService {
   }
   // action 
   fetchActionMovies(): Observable<any> {
-    return this.http.get(`${this.baseurl}/discover/movie?api_key=${this.apikey}&with_genres=28&language=vi-VN`);
+    return this.http.get(`${this.baseurl}//movie/now_playing?api_key=${this.apikey}&language=vi-VN`);
   }
 
   // adventure
@@ -81,4 +81,7 @@ export class MovieApiServiceService {
     return this.http.get(`${this.baseurl}/discover/movie?api_key=${this.apikey}&with_genres=53&language=vi-VN`);
   }
 
+  fetchUpCominhg(): Observable<any> {
+    return this.http.get(`${this.baseurl}movie/upcoming?api_key=${this.apikey}&language=vi-VN`);
+  }
 }
