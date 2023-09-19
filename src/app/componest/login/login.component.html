@@ -4,7 +4,7 @@
       <form >
         <div class="mb-3">
           <label class="form-label text-white fw-bold">* Email</label>
-          <input type="text" class="form-control" placeholder="Introduce your email" formControlName="email" autocomplete="off">
+          <input type="text" class="form-control" name="email">
           <span class="helper-text text-white" data-error="wrong" data-success="right">* Email is required</span>
         </div>
         <div class="mb-3">
@@ -13,7 +13,7 @@
           <span class="helper-text text-white" data-error="wrong" data-success="right">* Password is required. Minium length 6 characters</span>
         </div>
         <div class="buttons mb-3">
-          <input class="btn btn-danger sign-in"  type="submit" value="Login">
+          <input class="btn btn-danger sign-in" type="submit" value="Login">
           <p class="text-white text-center text-uppercase fw-bold">Or</p>
           <button class="btn btn-warning fw-bold" >Login With <i class="fab fa-google ms-1"></i></button>
         </div>
