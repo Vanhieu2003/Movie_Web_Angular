@@ -8,6 +8,7 @@ import { Component,HostListener } from '@angular/core';
 export class AppComponent {
   title = '';
   navbg:any;
+   loggedIn = false;
   @HostListener('document:scroll') scrollover(){
     console.log(document.body.scrollTop,'scrolllength#');
     

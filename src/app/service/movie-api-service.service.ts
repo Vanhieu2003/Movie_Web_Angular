@@ -38,7 +38,7 @@ export class MovieApiServiceService {
 
   // getMovieVideo
   getMovieVideo(data: any): Observable<any> {
-    return this.http.get(`${this.baseurl}/movie/${data}/videos?api_key=${this.apikey}&language=vi-VN`)
+    return this.http.get(`${this.baseurl}/movie/${data}/videos?api_key=${this.apikey}`)
   }
 
   // getMovieCast

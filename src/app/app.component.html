@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top"  [ngStyle]="navbg">
+<nav  class="collapse navbar-collapse" class="collapse navbar-collapse" id="navbarNav"class="navbar navbar-expand-lg fixed-top"  [ngStyle]="navbg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">MOVIE</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,13 +17,16 @@
             Thể loại
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Hành động</a></li>
+            <li><a class="dropdown-item" href="#">Kinh dị</a></li>
+            <li><a class="dropdown-item" href="#">Hài hước</a></li>
+            <li><a class="dropdown-item" href="#">Anime</a></li>
+            <li><a class="dropdown-item" href="#">Khoa học - viễn tưởng</a></li>
+            <li><a class="dropdown-item" href="#">Châu á</a></li>
           </ul>
         </li>
       </ul>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div  class="collapse navbar-collapse" class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active"  routerLink="login">Login</a>
@@ -38,6 +41,6 @@
 <router-outlet></router-outlet>
 <footer class="page-footer font-small">
   <div id="footer" class="footer-copyright text-center py-3">
-    Powered by TMDB. Developed by Team HUFLIT VN.
+    Powered by TMDB. Developed by Team 9 HUFLIT DAPM.
   </div>
 </footer>

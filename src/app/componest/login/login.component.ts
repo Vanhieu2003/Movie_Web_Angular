@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import {  Router } from '@angular/router';
-import { AuthService } from 'src/app/shared/auth.service';
+import { AuthService } from 'src/app/service/auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -10,22 +11,35 @@ import { AuthService } from 'src/app/shared/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  hide: boolean=true;
-  passwordControl:FormControl =new FormControl('',Validators.required)
+  email : string = '';
+  password : string = '';
 
-  loginForm :FormGroup=new FormGroup({
-    email: new FormControl('',[Validators.required,Validators.email]),
-    password: new FormControl('',Validators.required)
-  })
-  constructor(){}
+  constructor(private auth : AuthService) { }
 
   ngOnInit(): void {
+  }
+
+  login() {
+
+    if(this.email == '') {
+      alert('Please enter email');
+      return;
+    }
+
+    if(this.password == '') {
+      alert('Please enter password');
+      return;
+    }
+
+    this.auth.login(this.email,this.password);
     
+    this.email = '';
+    this.password = '';
+
   }
 
-  loginwithEmailandPass(){
-    console.log(this.loginForm.value);
-    //
+  signInWithGoogle() {
+    this.auth.googleSignIn();
   }
+ 
 }
-

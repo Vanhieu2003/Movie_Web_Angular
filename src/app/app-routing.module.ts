@@ -13,6 +13,7 @@ const routes: Routes = [
   {path:'movie/:id',component:MovieDetailsComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
+  {path:'home',component:HomeComponent},
  
   
 ];
